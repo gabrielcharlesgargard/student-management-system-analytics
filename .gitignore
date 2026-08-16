@@ -1,0 +1,38 @@
+# OS & Environment
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Windows temporary files
+*.tmp
+*.temp
+*.bak
+
+# Excel temporary/lock files
+~$*.xlsx
+~$*.xls
+~$*.xlsm
+
+# Python (If future automation scripts are added)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Environment / secrets (Crucial for recruiter trust)
+.env
+.env.*
+*.secret
+secrets.json
+
+# IDE
+.vscode/
+.idea/
+
+# Power BI temporary/autosave files
+*.pbit.tmp
+*.pbix.tmp
+
+# Logs
+*.log
