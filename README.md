@@ -14,7 +14,7 @@ An end-to-end data analytics and business intelligence solution designed to tran
 
 This project goes beyond standard visualization by establishing a robust backend data infrastructure before surface-level analytics.
 ![Architecture Diagram](Assets/Architecture/database_architecture.png)
-![Architecture Diagram](Assets/Dashboards/06_star_schema.png.png)
+![Architecture Diagram](Assets/Dashboards/06_star_schema.png)
 
 
 *   **Database Engine:** 8 core tables with a fully normalized design (3NF), utilizing strict constraints, foreign keys, and strategic indexing.
