@@ -1,0 +1,35 @@
+{
+  "test_suite": "Student Management System - Data Validation",
+  "execution_date": "2026-08-17",
+  "environment": "Production",
+  "results": [
+    {
+      "test_name": "Check Orphaned Enrollments",
+      "query_ref": "11_data_quality.sql - Check 1",
+      "status": "PASSED",
+      "records_flagged": 0,
+      "severity": "CRITICAL"
+    },
+    {
+      "test_name": "Validate Payment Amounts",
+      "query_ref": "11_data_quality.sql - Check 2",
+      "description": "Ensures no AmountPaid exceeds AmountOwed",
+      "status": "PASSED",
+      "records_flagged": 0,
+      "severity": "HIGH"
+    },
+    {
+      "test_name": "GPA Range Validation",
+      "description": "Checks if any GPA points fall outside the 0.0 - 4.0 constraint",
+      "status": "PASSED",
+      "records_flagged": 0,
+      "severity": "HIGH"
+    }
+  ],
+  "summary": {
+    "total_tests": 3,
+    "passed": 3,
+    "failed": 0,
+    "overall_health_score": "100%"
+  }
+}

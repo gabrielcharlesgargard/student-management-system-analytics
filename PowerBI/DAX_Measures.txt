@@ -1,0 +1,40 @@
+// ==========================================
+// ACADEMIC MEASURES
+// ==========================================
+
+// 1. Departmental GPA with context transition
+Average_GPA = 
+CALCULATE(
+    AVERAGE(Fact_Grades[GPAPoints]),
+    Fact_Grades[GPAPoints] > 0
+)
+
+// 2. High-Risk Student Count (Failing grade + high absences)
+High_Risk_Students = 
+CALCULATE(
+    DISTINCTCOUNT(Fact_Enrollments[StudentID]),
+    FILTER(
+        Fact_Enrollments,
+        [Average_GPA] < 2.0 && [Total_Absences] >= 3
+    )
+)
+
+// ==========================================
+// FINANCIAL MEASURES
+// ==========================================
+
+// 3. Collection Rate %
+Collection_Rate = 
+DIVIDE(
+    SUM(Fact_Financials[AmountPaid]),
+    SUM(Fact_Financials[AmountOwed]),
+    0
+)
+
+// 4. Overdue Revenue utilizing Time Intelligence
+Overdue_Balance = 
+CALCULATE(
+    SUMX(Fact_Financials, Fact_Financials[AmountOwed] - Fact_Financials[AmountPaid]),
+    Fact_Financials[DueDate] < TODAY(),
+    Fact_Financials[PaymentStatus] = "Overdue"
+)
