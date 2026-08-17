@@ -13,6 +13,7 @@ An end-to-end data analytics and business intelligence solution designed to tran
 ## 🏗️ System Architecture & Engineering
 
 This project goes beyond standard visualization by establishing a robust backend data infrastructure before surface-level analytics.
+![Architecture Diagram](Assets/Architecture/database_architecture.png)
 
 *   **Database Engine:** 8 core tables with a fully normalized design (3NF), utilizing strict constraints, foreign keys, and strategic indexing.
 *   **Analytical Layer:** 20+ advanced SQL queries and 7 analytical views utilizing CTEs, window functions, and cross-table aggregations.
@@ -24,19 +25,19 @@ This project goes beyond standard visualization by establishing a robust backend
 
 ### 📊 Executive Overview
 Tracks high-level institutional health, including total enrollment, aggregate financial standing, and global attendance metrics.
-![Executive Dashboard](PowerBI/Screenshots/01_executive_dashboard.png)
+![Executive Dashboard](Assets/Dashboards/01_executive_dashboard.png)
 
 ### 🎓 Academic Performance
 Analyzes GPA variance across departments, course-level grade distributions, and term-over-term academic trends.
-![Academic Dashboard](PowerBI/Screenshots/02_academic_dashboard.png)
+![Academic Dashboard](Assets/Dashboards/02_academic_dashboard.png)
 
 ### ⚠️ Risk Analytics
 Correlates attendance drops with academic decline to identify students at high risk of failure or dropout.
-![Risk Dashboard](PowerBI/Screenshots/03_risk_dashboard.png)
+![Risk Dashboard](Assets/Dashboards/03_risk_dashboard.png)
 
 ### 💰 Financial Health
 Monitors outstanding fee balances, payment statuses, and 30-day recovery forecasts.
-![Financial Dashboard](PowerBI/Screenshots/04_financial_dashboard.png)
+![Financial Dashboard](Assets/Dashboards/04_financial_dashboard.png)
 
 ## 🛠️ Qualifications Demonstrated
 * **Database Design:** DDL schema creation, relational integrity, data seeding.
